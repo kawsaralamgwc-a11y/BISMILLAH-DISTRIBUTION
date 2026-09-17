@@ -1,4 +1,14 @@
-<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0759c9"><link rel="manifest" href="manifest.json"><link rel="icon" type="image/png" href="favicon.png"><link rel="shortcut icon" href="favicon.png"><title>BS Dealer Pro v3.0.0</title><style>
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0759c9">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="shortcut icon" href="favicon.png">
+<title>BS Dealer Pro v3.0.0</title>
+<style>
 :root{--blue:#0759c9;--blue2:#0b82ef;--bg:#f4f8ff;--text:#17335f;--muted:#6d7d98;--card:#fff;--dashCard:#fff;--menuBg:#fff;--menuText:#17335f;--menuActive:#e8f2ff;--menuActiveText:#0759c9;--line:#dce7f5;--green:#18a96b;--orange:#f59a23;--red:#e5484d;--purple:#7b4ce2}*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Bengali",sans-serif;background:var(--bg);color:var(--text)}button,input,select{font:inherit}button{cursor:pointer;border:0}.top{height:72px;background:linear-gradient(110deg,#0647a5,#0b8ce9);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 22px;gap:12px}.brand{display:flex;align-items:center;gap:12px;font-size:23px;font-weight:800}.logo{width:45px;height:45px;border:2px solid #fff;border-radius:50%;display:grid;place-items:center;overflow:hidden;background:#fff}.logo img{width:100%;height:100%;object-fit:cover}.top small{opacity:.9}.layout{display:grid;grid-template-columns:245px 1fr;min-height:calc(100vh - 72px)}aside{background:var(--menuBg);border-right:1px solid var(--line);padding:18px 12px}.nav{width:100%;text-align:left;background:transparent;padding:13px 14px;border-radius:12px;color:var(--menuText);margin:3px 0;font-weight:700}.nav.active,.nav:hover{background:var(--menuActive);color:var(--menuActiveText)}main{padding:24px;min-width:0}.welcome{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.welcome h1{margin:0 0 5px;font-size:28px}.muted{color:var(--muted)}.pill{padding:8px 12px;border-radius:20px;background:#e7fff3;color:#087b4c;font-weight:700}.cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin:22px 0}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 4px 16px #164b8910}#dashboard .card{background:var(--dashCard)}.metric{font-size:25px;font-weight:800;margin-top:8px}.blue{border-top:4px solid var(--blue)}.green{border-top:4px solid var(--green)}.orange{border-top:4px solid var(--orange)}.purple{border-top:4px solid var(--purple)}.red{border-top:4px solid var(--red)}.grid2{display:grid;grid-template-columns:1.25fr 1fr;gap:16px}.section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;font-size:19px;font-weight:800}.actions{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.action{padding:16px 8px;border:1px solid var(--line);border-radius:12px;background:#f8fbff;color:var(--blue);font-weight:800}.tablewrap{overflow:auto}.table{width:100%;border-collapse:collapse;font-size:14px}.table th,.table td{padding:11px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}.status{padding:5px 9px;border-radius:15px;font-size:12px;font-weight:800}.pending{background:#fff2d6;color:#a85d00}.completed{background:#ddfaeb;color:#087b4c}.cancelled{background:#ffe2e3;color:#a51e28}.btn{padding:9px 12px;border-radius:9px;background:var(--blue);color:#fff;font-weight:700}.btn.greenbtn{background:var(--green)}.btn.redbtn{background:var(--red)}.btn.gray{background:#edf2f8;color:var(--text)}.view{display:none}.view.active{display:block}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}.field input,.field select{width:100%;padding:11px;border:1px solid var(--line);border-radius:9px;background:#fff}.formactions{display:flex;gap:8px;margin-top:15px;flex-wrap:wrap}.notice{padding:12px;border-radius:10px;background:#eef6ff;border:1px solid #cfe3ff;margin-bottom:15px}.empty{padding:30px;text-align:center;color:var(--muted)}#productModal{display:none;position:fixed;inset:0;background:rgba(10,30,60,.5);align-items:center;justify-content:center;z-index:50;padding:16px}#productModal.open{display:flex}#editInvoiceModal{display:none;position:fixed;inset:0;background:rgba(10,30,60,.5);align-items:center;justify-content:center;z-index:50;padding:16px}#editInvoiceModal.open{display:flex}#editInvoiceModal .modal-box{background:#fff;border-radius:16px;padding:20px;max-width:560px;width:100%;max-height:92vh;overflow:auto;box-shadow:0 10px 40px #16295530}#editInvoiceModal .section-title button{margin-left:auto}#productModal .modal-box{background:#fff;border-radius:16px;padding:20px;max-width:560px;width:100%;max-height:92vh;overflow:auto;box-shadow:0 10px 40px #16295530}#productModal .section-title button{margin-left:auto}@media(max-width:1000px){.cards{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}}@media(max-width:650px){.top{height:auto;min-height:66px;padding:12px}.brand{font-size:17px}.layout{grid-template-columns:190px minmax(0,1fr);align-items:start}aside{display:flex;flex-direction:column;gap:3px;padding:10px;position:sticky;top:0;height:calc(100vh - 66px);overflow-y:auto;overflow-x:hidden;z-index:3}.nav{white-space:normal;padding:11px 9px;font-size:13px;text-align:left}.cards{grid-template-columns:1fr}.actions{grid-template-columns:1fr 1fr}main{padding:14px;min-width:0}.formgrid{grid-template-columns:1fr}.welcome h1{font-size:23px}}
 
 .product-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:15px 0}.summary .card{padding:14px}.summary .metric{font-size:22px}@media(max-width:650px){.summary{grid-template-columns:1fr}}
@@ -22,12 +32,749 @@
 .pos-totals div{display:flex;justify-content:space-between;padding:4px 0;font-weight:700}
 .pos-totals .pos-net{font-size:19px;color:var(--blue);border-top:1px dashed var(--line);margin-top:4px;padding-top:10px}
 @media(max-width:1000px){.pos-layout{grid-template-columns:1fr}.pos-left{max-height:320px}}
-</style></head><body><div id="authScreen" class="authwrap"><div class="authbox"><div class="authlogo"><img src="icon-64.png" alt="logo"></div><h2>BS Dealer Pro</h2><div id="authSetupForm"><p class="muted">নতুন অ্যাকাউন্ট তৈরি করুন (মোবাইল নম্বর ও পিন সেট করুন)</p><div class="field"><label>মোবাইল নম্বর</label><input id="authSetupMobile" placeholder="মোবাইল নম্বর দিন" inputmode="numeric"></div><div class="field"><label>পিন (৪-৬ সংখ্যার)</label><input id="authSetupPin" type="password" inputmode="numeric" placeholder="পিন সেট করুন"></div><div class="field"><label>পিন আবার লিখুন</label><input id="authSetupPin2" type="password" inputmode="numeric" placeholder="পিন আবার লিখুন"></div><div class="autherror" id="authSetupError"></div><button class="btn greenbtn" id="authSetupBtn" style="width:100%">অ্যাকাউন্ট তৈরি করুন</button></div><div id="authLoginForm" style="display:none"><p class="muted">লগইন করুন</p><div class="field"><label>মোবাইল নম্বর</label><input id="authLoginMobile" placeholder="মোবাইল নম্বর দিন" inputmode="numeric"></div><div class="field"><label>পিন</label><input id="authLoginPin" type="password" inputmode="numeric" placeholder="পিন দিন"></div><div class="autherror" id="authLoginError"></div><button class="btn" id="authLoginBtn" style="width:100%">লগইন করুন</button><button class="btn gray" id="authResetBtn" style="width:100%;margin-top:8px">পিন ভুলে গেছেন? রিসেট করুন</button></div></div></div><div id="appRoot" style="display:none"><header class="top"><div class="brand"><div class="logo"><img src="icon-64.png" alt="BDC Logo"></div><div>BS Dealer Pro<br><small>ডিলারশিপ ম্যানেজমেন্ট · v3.0.0</small></div></div><div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">🔴 অফলাইন মোড　📅 <span id="today"></span> <select id="profileSelect" style="padding:9px;border-radius:8px;border:0;font-weight:700"></select> <button class="btn gray" id="newProfileBtn">+ প্রোফাইল</button> <button class="btn redbtn" id="deleteProfileBtn">প্রোফাইল ডিলিট</button> <button class="btn gray" id="lockBtn">🔒 লক করুন</button></div></header><div class="layout"><aside id="nav"><button class="nav active" data-view="dashboard">🏠 ড্যাশবোর্ড</button><button class="nav" data-view="purchase">🛒 ক্রয় অর্ডার</button><button class="nav" data-view="sale">🛍️ বিক্রয় অর্ডার</button><button class="nav" data-view="pending">⏳ পেন্ডিং অর্ডার</button><button class="nav" data-view="delivery">🚚 ডেলিভারি</button><button class="nav" data-view="return">↩️ রিটার্ন / ক্যানসেল</button><button class="nav" data-view="stock">📦 স্টক</button><button class="nav" id="voucherMenu">🧾 ভাউচার <span style="float:right">▾</span></button><div id="voucherSub" style="display:none;padding-left:18px"><button class="nav" data-view="voucherPurchase">ক্রয়</button><button class="nav" data-view="voucherSale">বিক্রয়</button><button class="nav" data-view="invoices">সব ইনভয়েস</button></div><button class="nav" data-view="products">🧾 পণ্য</button><button class="nav" data-view="units">⚙️ ইউনিট</button><button class="nav" data-view="cash">💵 ক্যাশ</button><button class="nav" data-view="bank">🏦 ব্যাংক</button><button class="nav" data-view="party">👥 পার্টি</button><button class="nav" data-view="due">🧾 বাকি হিসাব</button><button class="nav" data-view="reports">📊 রিপোর্ট</button><button class="nav" data-view="balance">⚖️ ব্যালেন্স শীট</button><button class="nav" data-view="profit">📈 লাভ-ক্ষতি</button><button class="nav" data-view="appearance">🎨 রঙ / থিম</button></aside><main>
-<section id="dashboard" class="view active"><div class="welcome"><div><h1>স্বাগতম, <span id="profileNameWelcome">Admin</span></h1><div class="muted">আপনার ডিলারশিপ ব্যবসার সম্পূর্ণ ব্যবস্থাপনা</div></div><span class="pill">নতুন ভার্সন v3.0.0</span><button class="btn gray refresh-btn">রিফ্রেশ</button></div><div class="cards"><div class="card blue">মোট বিক্রয়<div class="metric" id="mSale">৳ 0</div></div><div class="card green">মোট ক্রয়<div class="metric" id="mPurchase">৳ 0</div></div><div class="card orange">মোট স্টক<div class="metric" id="mStock">0</div></div><div class="card purple">পেন্ডিং অর্ডার<div class="metric" id="mPending">0</div></div><div class="card red">মোট পার্টি<div class="metric" id="mParty">0</div></div></div><div class="card"><div class="section-title">দ্রুত অ্যাক্সেস</div><div class="actions"><button class="action" id="dashPurchase">নতুন ক্রয়</button><button class="action" id="dashSale">নতুন বিক্রয়</button><button class="action" id="dashProduct">নতুন পণ্য যোগ</button><button class="action" data-go="pending">পেন্ডিং অর্ডার</button><button class="action" data-go="stock">স্টক দেখুন</button></div></div><br><div class="grid2"><div class="card"><div class="section-title">সাম্প্রতিক অর্ডার</div><div id="recent"></div></div><div class="card"><div class="section-title">স্টক সংক্ষিপ্ত তথ্য</div><div id="stockmini"></div></div></div></section>
-<section id="purchase" class="view"><div class="section-title">নতুন ক্রয় অর্ডার <button class="btn gray refresh-btn">রিফ্রেশ</button></div><div class="notice">Save করলে অর্ডার Pending হবে। Complete না হওয়া পর্যন্ত স্টক বাড়বে না।</div><div class="pos-layout"><div class="card pos-left"><div class="field"><label>পণ্য সার্চ</label><input id="pSearch" placeholder="পণ্যের নাম লিখে সার্চ করুন"></div><div class="field"><label>বারকোড</label><input id="pBarcode" placeholder="বারকোড স্ক্যান/টাইপ করে Enter চাপুন"></div><div class="muted" style="margin:8px 0 4px;font-size:13px">তালিকা থেকে ক্লিক করলেই পণ্য ডান পাশের ইনভয়েসে যোগ হবে</div><div id="pProductList" class="pos-product-list"></div></div><div class="card pos-right"><div class="field"><label>পার্টির নাম (সরবরাহকারী)</label><input id="pParty" placeholder="সরবরাহকারী"></div><div class="section-title" style="margin-top:10px;font-size:16px">ইনভয়েস আইটেম</div><div id="pCartWrap"></div><div class="formgrid" style="margin-top:12px"><div class="field"><label>ডিসকাউন্ট</label><input id="pDiscount" type="number" min="0" value="0"></div><div class="field"><label>পেমেন্ট</label><div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="btn greenbtn" id="payPCash">ক্যাশ</button><button type="button" class="btn gray" id="payPBank">ব্যাংক</button><button type="button" class="btn gray" id="payPDue">বাকি</button></div><input id="pPayment" type="hidden" value="cash"><div class="muted" id="paymentPLabel">ক্যাশ পেমেন্ট নির্বাচিত</div></div></div><div class="pos-totals"><div><span>সাব-টোটাল</span><span id="pGross">৳ 0.00</span></div><div><span>ডিসকাউন্ট</span><span id="pDiscAmt">৳ 0.00</span></div><div class="pos-net"><span>সর্বমোট</span><span id="pNetTotal">৳ 0.00</span></div></div><div class="formactions"><button class="btn" id="savePurchase">অর্ডার সেভ করুন</button></div></div></div></section>
-<section id="sale" class="view"><div class="section-title">নতুন বিক্রয় অর্ডার / ইনভয়েস <button class="btn gray refresh-btn">রিফ্রেশ</button></div><div class="notice">ক্রয়ের মতো এক ইনভয়েসে একাধিক পণ্য যোগ করুন। সেভ করলে পুরো ইনভয়েসটি একটি মাত্র Pending অর্ডার হিসেবে থাকবে। Complete করার আগে ইনভয়েস এডিট করা যাবে।</div><div class="pos-layout"><div class="card pos-left"><div class="field"><label>পণ্য সার্চ</label><input id="sSearch" placeholder="পণ্যের নাম লিখে সার্চ করুন"></div><div class="field"><label>বারকোড</label><input id="sBarcode" placeholder="বারকোড স্ক্যান/টাইপ করে Enter চাপুন"></div><div class="muted" style="margin:8px 0 4px;font-size:13px">তালিকা থেকে ক্লিক করলেই পণ্য ডান পাশের ইনভয়েসে যোগ হবে</div><div id="sProductList" class="pos-product-list"></div></div><div class="card pos-right"><div class="field"><label>পার্টির নাম</label><input id="sParty" placeholder="কাস্টমার"></div><div class="section-title" style="margin-top:10px;font-size:16px">ইনভয়েস আইটেম</div><div id="sCartWrap"></div><div class="formgrid" style="margin-top:12px"><div class="field"><label>ডিসকাউন্ট</label><input id="sDiscount" type="number" min="0" value="0"></div><div class="field"><label>পেমেন্ট</label><div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="btn greenbtn" id="payCash">ক্যাশ</button><button type="button" class="btn gray" id="payBank">ব্যাংক</button><button type="button" class="btn gray" id="payDue">বাকি</button></div><input id="sPayment" type="hidden" value="cash"><div class="muted" id="paymentLabel">ক্যাশ পেমেন্ট নির্বাচিত</div></div></div><div class="pos-totals"><div><span>সাব-টোটাল</span><span id="sGross">৳ 0.00</span></div><div><span>ডিসকাউন্ট</span><span id="sDiscAmt">৳ 0.00</span></div><div class="pos-net"><span>সর্বমোট</span><span id="sNet">৳ 0.00</span></div></div><div class="formactions"><button class="btn greenbtn" id="saveSale">ইনভয়েস / অর্ডার সেভ করুন</button></div></div></div></section>
-<section id="pending" class="view"><div class="card"><div class="section-title">পেন্ডিং অর্ডার <button class="btn gray refresh-btn" id="refresh">রিফ্রেশ</button></div><div id="pendingTable"></div></div></section><section id="delivery" class="view"><div class="card"><div class="section-title">ডেলিভারি সম্পন্ন অর্ডার <button class="btn gray refresh-btn">রিফ্রেশ</button></div><div id="deliveryTable"></div></div></section><section id="return" class="view"><div class="card"><div class="section-title">ক্যানসেল / রিটার্ন অর্ডার <button class="btn gray refresh-btn">রিফ্রেশ</button></div><div id="returnTable"></div></div></section><section id="stock" class="view"><div class="card"><div class="section-title">স্টক <button class="btn gray refresh-btn">রিফ্রেশ</button></div><div id="stockTable"></div></div></section><section id="voucherPurchase" class="view"><div class="card"><div class="section-title">ভাউচার / ক্রয় ইনভয়েস <button class="btn gray refresh-btn">রিফ্রেশ</button></div><div id="voucherPurchaseTable"></div></div></section><section id="voucherSale" class="view"><div class="card"><div class="section-title">ভাউচার / বিক্রয় ইনভয়েস <button class="btn gray refresh-btn">রিফ্রেশ</button></div><div id="voucherSaleTable"></div></div></section><section id="invoices" class="view"><div class="card"><div class="section-title">পুরোনো সকল ইনভয়েস <button class="btn gray refresh-btn">রিফ্রেশ</button></div><div class="notice">প্রতিটি ইনভয়েসের পাশে Edit চাপলে তথ্য পরিবর্তন করে আবার সেভ করতে পারবেন।</div><div id="invoiceTable"></div></div></section><section id="products" class="view"><div class="card"><div class="product-head"><div><div class="section-title" style="margin-bottom:4px">পণ্য লিস্ট</div><div class="muted">সব পণ্য ডান পাশে দেখুন এবং নতুন পণ্য যোগ করুন</div></div><button class="btn gray refresh-btn">রিফ্রেশ</button> <button class="btn" id="openProductModal">+ নতুন পণ্য যোগ</button></div><div class="summary"><div class="card blue">মোট পণ্য<div class="metric" id="productCount">0</div></div><div class="card green">মোট মজুদ<div class="metric" id="productStockTotal">0</div></div><div class="card orange">মোট দাম<div class="metric" id="productValueTotal">৳ 0.00</div></div></div><div id="productTable"></div></div></section><div id="productModal"><div class="modal-box"><div class="section-title"><span id="productModalTitle">নতুন পণ্য যোগ করুন</span><button class="btn gray" id="closeProductModal">✕</button></div><div class="formgrid"><div class="field"><label>বার কোড</label><input id="newBarcode" placeholder="ঐচ্ছিক"></div><div class="field"><label>পণ্যের নাম</label><input id="newProduct" placeholder="পণ্যের নাম লিখুন"></div><div class="field"><label>ইউনিট</label><select id="newUnit"></select></div><div class="field"><label>কোম্পানি দর</label><input id="newCompanyPrice" type="number" min="0" value="0"></div><div class="field"><label>লাভের হার (%)</label><input id="newPercent" type="number" min="0" value="0"></div><div class="field"><label>সেল দর</label><input id="newSalePrice" type="number" min="0" value="0" readonly></div><div class="field"><label>শুরুর স্টক</label><input id="newStock" type="number" min="0" value="0"></div><div class="field"><label>লো স্টক এলার্ট</label><input id="newLowStock" type="number" min="0" value="5"></div></div><div class="formactions"><button class="btn greenbtn" id="addProduct">পণ্য সেভ করুন</button><button class="btn gray" id="cancelProductModal">বাতিল</button></div></div></div><div id="editInvoiceModal"><div class="modal-box"><div class="section-title" id="editInvoiceTitle">ইনভয়েস এডিট<button class="btn gray" id="closeEditInvoiceModal">✕</button></div><div class="formgrid"><div class="field"><label>পার্টির নাম</label><input id="editParty"></div><div class="field"><label>পরিমাণ (Qty)</label><input id="editQty" type="number" min="1" value="1"></div><div class="field"><label>দর (প্রতি ইউনিট)</label><input id="editPrice" type="number" min="0" value="0"></div><div class="field" id="editDiscountField"><label>ডিসকাউন্ট</label><input id="editDiscount" type="number" min="0" value="0"></div></div><div class="notice">এই অর্ডারটি আগে সম্পন্ন (Completed) থাকলে স্টক ও ক্যাশ হিসাব স্বয়ংক্রিয়ভাবে ঠিক করে নতুন তথ্য অনুযায়ী পুনরায় হিসাব করা হবে।</div><div class="formactions"><button class="btn greenbtn" id="saveEditInvoice">পরিবর্তন সেভ করুন</button><button class="btn gray" id="cancelEditInvoiceModal">বাতিল</button></div></div></div><section id="units" class="view"><div class="card"><div class="section-title">ইউনিট ব্যবস্থাপনা <button class="btn gray refresh-btn">রিফ্রেশ</button></div><div class="formgrid"><div class="field"><label>নতুন ইউনিট</label><input id="newUnitName" placeholder="যেমন: কার্টন, পিস, কেজি"></div></div><div class="formactions"><button class="btn" id="addUnit">ইউনিট যোগ করুন</button></div><div id="unitTable"></div></div></section><section id="cash" class="view"><div class="card"><div class="section-title">ক্যাশ হিসাব <button class="btn gray refresh-btn">রিফ্রেশ</button></div><div class="summary"><div class="card green"><div class="muted">বর্তমান ক্যাশ</div><div class="metric" id="cashBalance">৳ 0.00</div></div><div class="card blue"><div class="muted">মোট জমা</div><div class="metric" id="cashIn">৳ 0.00</div></div><div class="card orange"><div class="muted">মোট খরচ</div><div class="metric" id="cashOut">৳ 0.00</div></div></div><div class="formgrid"><div class="field"><label>লেনদেনের ধরন</label><select id="cashType"><option value="in">জমা</option><option value="out">খরচ</option><option value="transferBank">ব্যাংকে স্থানান্তর</option></select></div><div class="field"><label>টাকার পরিমাণ</label><input id="cashAmount" type="number" min="0" step="0.01" placeholder="0.00"></div><div class="field"><label>বিবরণ</label><input id="cashNote" placeholder="যেমন: ডেলিভারি খরচ / নগদ জমা"></div></div><div class="formactions"><button class="btn" id="addCash">ক্যাশ লেনদেন যোগ করুন</button></div><div id="cashInfo"></div></div></section><section id="bank" class="view"><div class="card"><div class="section-title">ব্যাংক হিসাব <button class="btn gray refresh-btn">রিফ্রেশ</button></div><div class="summary"><div class="card green"><div class="muted">বর্তমান ব্যাংক ব্যালেন্স</div><div class="metric" id="bankBalance">৳ 0.00</div></div><div class="card blue"><div class="muted">মোট জমা</div><div class="metric" id="bankIn">৳ 0.00</div></div><div class="card orange"><div class="muted">মোট উত্তোলন/খরচ</div><div class="metric" id="bankOut">৳ 0.00</div></div></div><div class="formgrid"><div class="field"><label>লেনদেনের ধরন</label><select id="bankType"><option value="in">জমা</option><option value="out">উত্তোলন / খরচ</option></select></div><div class="field"><label>টাকার পরিমাণ</label><input id="bankAmount" type="number" min="0" step="0.01" placeholder="0.00"></div><div class="field"><label>ব্যাংকের নাম</label><input id="bankName" placeholder="ব্যাংকের নাম"></div><div class="field"><label>বিবরণ</label><input id="bankNote" placeholder="লেনদেনের বিবরণ"></div></div><div class="formactions"><button class="btn" id="addBank">ব্যাংক লেনদেন যোগ করুন</button></div><div id="bankInfo"></div></div></section><section id="party" class="view"><div class="card"><div class="section-title">পার্টি / সাপ্লাইয়ার <button class="btn gray refresh-btn">রিফ্রেশ</button></div><div class="notice">পার্টি বা সাপ্লাইয়ার যোগ করুন এবং কার কাছ থেকে কত কেনা/বিক্রি হয়েছে তার রিপোর্ট দেখুন।</div><div class="formgrid"><div class="field"><label>ধরন</label><select id="partyType"><option value="party">পার্টি</option><option value="supplier">সাপ্লাইয়ার</option></select></div><div class="field"><label>নাম</label><input id="partyName" placeholder="পার্টি / সাপ্লাইয়ারের নাম"></div><div class="field"><label>মোবাইল নং</label><input id="partyMobile" placeholder="মোবাইল নম্বর"></div><div class="field"><label>ঠিকানা</label><input id="partyAddress" placeholder="ঠিকানা"></div></div><div class="formactions"><button class="btn" id="saveParty">যোগ করুন</button></div><div id="partyTable"></div></div></section><section id="due" class="view"><div class="card"><div class="section-title">বাকি হিসাব (পাওনা ও দেনা) <button class="btn gray refresh-btn">রিফ্রেশ</button></div><div class="notice">যেসব বিক্রয়/ক্রয় "বাকি" পেমেন্টে সম্পন্ন হয়েছে কিন্তু এখনো টাকা লেনদেন হয়নি, তা এখানে দেখুন। টাকা হাতে পেলে/দিলে "পরিশোধ সম্পন্ন" চাপুন — তখনই তা ক্যাশে যোগ/বাদ হবে।</div><div id="dueTable"></div></div></section><section id="balance" class="view"><div class="card"><div class="section-title">ব্যালেন্স শীট <button class="btn gray refresh-btn">রিফ্রেশ</button></div><div id="balanceSheet"></div></div></section><section id="profit" class="view"><div class="card"><div class="section-title">লাভ-ক্ষতি হিসাব <button class="btn gray refresh-btn">রিফ্রেশ</button></div><div id="profitLoss"></div></div></section><section id="reports" class="view"><div class="card"><div class="section-title">বিস্তারিত রিপোর্ট <button class="btn gray refresh-btn">রিফ্রেশ</button></div><div class="summary"><div class="card blue">মোট বিক্রয়<div class="metric" id="rSales">৳ 0.00</div></div><div class="card green">মোট ক্রয়<div class="metric" id="rPurchase">৳ 0.00</div></div><div class="card orange">মোট লাভ/ক্ষতি<div class="metric" id="rProfit">৳ 0.00</div></div></div><div id="reportInfo"></div><hr><h3>ব্যালেন্স শীট</h3><div id="balanceSheetR"></div><hr><h3>লাভ-ক্ষতি হিসাব</h3><div id="profitLossR"></div></div></section>
-<section id="appearance" class="view"><div class="card"><div class="section-title">🎨 রঙ / থিম কাস্টমাইজ</div><div class="notice">এখান থেকে ড্যাশবোর্ডের ঘর ও মেনু প্যানেলের রঙ পরিবর্তন করতে পারবেন।</div><div class="formgrid"><div class="field"><label>ড্যাশবোর্ড ঘরের রঙ</label><input id="dashCardColor" type="color"><input id="dashCardHex" type="text" placeholder="#ffffff" style="margin-top:6px;width:100%;padding:9px;border:1px solid var(--line);border-radius:9px"></div><div class="field"><label>মেনু প্যানেলের রঙ</label><input id="menuBgColor" type="color"><input id="menuBgHex" type="text" placeholder="#ffffff" style="margin-top:6px;width:100%;padding:9px;border:1px solid var(--line);border-radius:9px"></div><div class="field"><label>মেনু লেখার রঙ</label><input id="menuTextColor" type="color"><input id="menuTextHex" type="text" placeholder="#17335f" style="margin-top:6px;width:100%;padding:9px;border:1px solid var(--line);border-radius:9px"></div><div class="field"><label>সিলেক্টেড মেনুর রঙ</label><input id="menuActiveColor" type="color"><input id="menuActiveHex" type="text" placeholder="#e8f2ff" style="margin-top:6px;width:100%;padding:9px;border:1px solid var(--line);border-radius:9px"></div><div class="field"><label>সিলেক্টেড মেনুর লেখার রঙ</label><input id="menuActiveTextColor" type="color"><input id="menuActiveTextHex" type="text" placeholder="#0759c9" style="margin-top:6px;width:100%;padding:9px;border:1px solid var(--line);border-radius:9px"></div></div><div class="formactions"><button class="btn" id="saveThemeBtn">💾 রঙ সংরক্ষণ</button><button class="btn gray" id="resetThemeBtn">↩️ ডিফল্ট রঙ</button></div></div></section></main></div></div><script>
+</style>
+</head>
+<body>
+<div id="authScreen" class="authwrap">
+<div class="authbox">
+<div class="authlogo">
+<img src="icon-64.png" alt="logo">
+</div>
+<h2>BS Dealer Pro</h2>
+<div id="authSetupForm">
+<p class="muted">নতুন অ্যাকাউন্ট তৈরি করুন (মোবাইল নম্বর ও পিন সেট করুন)</p>
+<div class="field">
+<label>মোবাইল নম্বর</label>
+<input id="authSetupMobile" placeholder="মোবাইল নম্বর দিন" inputmode="numeric">
+</div>
+<div class="field">
+<label>পিন (৪-৬ সংখ্যার)</label>
+<input id="authSetupPin" type="password" inputmode="numeric" placeholder="পিন সেট করুন">
+</div>
+<div class="field">
+<label>পিন আবার লিখুন</label>
+<input id="authSetupPin2" type="password" inputmode="numeric" placeholder="পিন আবার লিখুন">
+</div>
+<div class="autherror" id="authSetupError">
+</div>
+<button class="btn greenbtn" id="authSetupBtn" style="width:100%">অ্যাকাউন্ট তৈরি করুন</button>
+</div>
+<div id="authLoginForm" style="display:none">
+<p class="muted">লগইন করুন</p>
+<div class="field">
+<label>মোবাইল নম্বর</label>
+<input id="authLoginMobile" placeholder="মোবাইল নম্বর দিন" inputmode="numeric">
+</div>
+<div class="field">
+<label>পিন</label>
+<input id="authLoginPin" type="password" inputmode="numeric" placeholder="পিন দিন">
+</div>
+<div class="autherror" id="authLoginError">
+</div>
+<button class="btn" id="authLoginBtn" style="width:100%">লগইন করুন</button>
+<button class="btn gray" id="authResetBtn" style="width:100%;margin-top:8px">পিন ভুলে গেছেন? রিসেট করুন</button>
+</div>
+</div>
+</div>
+<div id="appRoot" style="display:none">
+<header class="top">
+<div class="brand">
+<div class="logo">
+<img src="icon-64.png" alt="BDC Logo">
+</div>
+<div>BS Dealer Pro<br>
+<small>ডিলারশিপ ম্যানেজমেন্ট · v3.0.0</small>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">🔴 অফলাইন মোড　📅 <span id="today">
+</span> <select id="profileSelect" style="padding:9px;border-radius:8px;border:0;font-weight:700">
+</select> <button class="btn gray" id="newProfileBtn">+ প্রোফাইল</button> <button class="btn redbtn" id="deleteProfileBtn">প্রোফাইল ডিলিট</button> <button class="btn gray" id="lockBtn">🔒 লক করুন</button>
+</div>
+</header>
+<div class="layout">
+<aside id="nav">
+<button class="nav active" data-view="dashboard">🏠 ড্যাশবোর্ড</button>
+<button class="nav" data-view="purchase">🛒 ক্রয় অর্ডার</button>
+<button class="nav" data-view="sale">🛍️ বিক্রয় অর্ডার</button>
+<button class="nav" data-view="pending">⏳ পেন্ডিং অর্ডার</button>
+<button class="nav" data-view="delivery">🚚 ডেলিভারি</button>
+<button class="nav" data-view="return">↩️ রিটার্ন / ক্যানসেল</button>
+<button class="nav" data-view="stock">📦 স্টক</button>
+<button class="nav" id="voucherMenu">🧾 ভাউচার <span style="float:right">▾</span>
+</button>
+<div id="voucherSub" style="display:none;padding-left:18px">
+<button class="nav" data-view="voucherPurchase">ক্রয়</button>
+<button class="nav" data-view="voucherSale">বিক্রয়</button>
+<button class="nav" data-view="invoices">সব ইনভয়েস</button>
+</div>
+<button class="nav" data-view="products">🧾 পণ্য</button>
+<button class="nav" data-view="units">⚙️ ইউনিট</button>
+<button class="nav" data-view="cash">💵 ক্যাশ</button>
+<button class="nav" data-view="bank">🏦 ব্যাংক</button>
+<button class="nav" data-view="income">📥 আয় হিসাব</button>
+<button class="nav" data-view="expense">📤 ব্যয় হিসাব</button>
+<button class="nav" data-view="party">👥 পার্টি</button>
+<button class="nav" data-view="due">🧾 বাকি হিসাব</button>
+<button class="nav" data-view="reports">📊 রিপোর্ট</button>
+<button class="nav" data-view="balance">⚖️ ব্যালেন্স শীট</button>
+<button class="nav" data-view="profit">📈 লাভ-ক্ষতি</button>
+<button class="nav" data-view="appearance">🎨 রঙ / থিম</button>
+</aside>
+<main>
+<section id="dashboard" class="view active">
+<div class="welcome">
+<div>
+<h1>স্বাগতম, <span id="profileNameWelcome">Admin</span>
+</h1>
+<div class="muted">আপনার ডিলারশিপ ব্যবসার সম্পূর্ণ ব্যবস্থাপনা</div>
+</div>
+<span class="pill">নতুন ভার্সন v3.0.0</span>
+<button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div class="cards">
+<div class="card blue">মোট বিক্রয়<div class="metric" id="mSale">৳ 0</div>
+</div>
+<div class="card green">মোট ক্রয়<div class="metric" id="mPurchase">৳ 0</div>
+</div>
+<div class="card orange">মোট স্টক<div class="metric" id="mStock">0</div>
+</div>
+<div class="card purple">পেন্ডিং অর্ডার<div class="metric" id="mPending">0</div>
+</div>
+<div class="card red">মোট পার্টি<div class="metric" id="mParty">0</div>
+</div>
+</div>
+<div class="summary">
+<div class="card green">অন্যান্য আয়<div class="metric" id="mIncome">৳ 0.00</div>
+</div>
+<div class="card red">অন্যান্য ব্যয়<div class="metric" id="mExpense">৳ 0.00</div>
+</div>
+</div>
+<div class="card">
+<div class="section-title">দ্রুত অ্যাক্সেস</div>
+<div class="actions">
+<button class="action" id="dashPurchase">নতুন ক্রয়</button>
+<button class="action" id="dashSale">নতুন বিক্রয়</button>
+<button class="action" id="dashProduct">নতুন পণ্য যোগ</button>
+<button class="action" data-go="income">আয় যোগ করুন</button>
+<button class="action" data-go="expense">ব্যয় যোগ করুন</button>
+<button class="action" data-go="pending">পেন্ডিং অর্ডার</button>
+<button class="action" data-go="stock">স্টক দেখুন</button>
+</div>
+</div>
+<br>
+<div class="grid2">
+<div class="card">
+<div class="section-title">সাম্প্রতিক অর্ডার</div>
+<div id="recent">
+</div>
+</div>
+<div class="card">
+<div class="section-title">স্টক সংক্ষিপ্ত তথ্য</div>
+<div id="stockmini">
+</div>
+</div>
+</div>
+</section>
+<section id="purchase" class="view">
+<div class="section-title">নতুন ক্রয় অর্ডার <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div class="notice">Save করলে অর্ডার Pending হবে। Complete না হওয়া পর্যন্ত স্টক বাড়বে না।</div>
+<div class="pos-layout">
+<div class="card pos-left">
+<div class="field">
+<label>পণ্য সার্চ</label>
+<input id="pSearch" placeholder="পণ্যের নাম লিখে সার্চ করুন">
+</div>
+<div class="field">
+<label>বারকোড</label>
+<input id="pBarcode" placeholder="বারকোড স্ক্যান/টাইপ করে Enter চাপুন">
+</div>
+<div class="muted" style="margin:8px 0 4px;font-size:13px">তালিকা থেকে ক্লিক করলেই পণ্য ডান পাশের ইনভয়েসে যোগ হবে</div>
+<div id="pProductList" class="pos-product-list">
+</div>
+</div>
+<div class="card pos-right">
+<div class="field">
+<label>পার্টির নাম (সরবরাহকারী)</label>
+<input id="pParty" placeholder="সরবরাহকারী">
+</div>
+<div class="section-title" style="margin-top:10px;font-size:16px">ইনভয়েস আইটেম</div>
+<div id="pCartWrap">
+</div>
+<div class="formgrid" style="margin-top:12px">
+<div class="field">
+<label>ডিসকাউন্ট</label>
+<input id="pDiscount" type="number" min="0" value="0">
+</div>
+<div class="field">
+<label>পেমেন্ট</label>
+<div style="display:flex;gap:8px;flex-wrap:wrap">
+<button type="button" class="btn greenbtn" id="payPCash">ক্যাশ</button>
+<button type="button" class="btn gray" id="payPBank">ব্যাংক</button>
+<button type="button" class="btn gray" id="payPDue">বাকি</button>
+</div>
+<input id="pPayment" type="hidden" value="cash">
+<div class="muted" id="paymentPLabel">ক্যাশ পেমেন্ট নির্বাচিত</div>
+</div>
+</div>
+<div class="pos-totals">
+<div>
+<span>সাব-টোটাল</span>
+<span id="pGross">৳ 0.00</span>
+</div>
+<div>
+<span>ডিসকাউন্ট</span>
+<span id="pDiscAmt">৳ 0.00</span>
+</div>
+<div class="pos-net">
+<span>সর্বমোট</span>
+<span id="pNetTotal">৳ 0.00</span>
+</div>
+</div>
+<div class="formactions">
+<button class="btn" id="savePurchase">অর্ডার সেভ করুন</button>
+</div>
+</div>
+</div>
+</section>
+<section id="sale" class="view">
+<div class="section-title">নতুন বিক্রয় অর্ডার / ইনভয়েস <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div class="notice">ক্রয়ের মতো এক ইনভয়েসে একাধিক পণ্য যোগ করুন। সেভ করলে পুরো ইনভয়েসটি একটি মাত্র Pending অর্ডার হিসেবে থাকবে। Complete করার আগে ইনভয়েস এডিট করা যাবে।</div>
+<div class="pos-layout">
+<div class="card pos-left">
+<div class="field">
+<label>পণ্য সার্চ</label>
+<input id="sSearch" placeholder="পণ্যের নাম লিখে সার্চ করুন">
+</div>
+<div class="field">
+<label>বারকোড</label>
+<input id="sBarcode" placeholder="বারকোড স্ক্যান/টাইপ করে Enter চাপুন">
+</div>
+<div class="muted" style="margin:8px 0 4px;font-size:13px">তালিকা থেকে ক্লিক করলেই পণ্য ডান পাশের ইনভয়েসে যোগ হবে</div>
+<div id="sProductList" class="pos-product-list">
+</div>
+</div>
+<div class="card pos-right">
+<div class="field">
+<label>পার্টির নাম</label>
+<input id="sParty" placeholder="কাস্টমার">
+</div>
+<div class="section-title" style="margin-top:10px;font-size:16px">ইনভয়েস আইটেম</div>
+<div id="sCartWrap">
+</div>
+<div class="formgrid" style="margin-top:12px">
+<div class="field">
+<label>ডিসকাউন্ট</label>
+<input id="sDiscount" type="number" min="0" value="0">
+</div>
+<div class="field">
+<label>পেমেন্ট</label>
+<div style="display:flex;gap:8px;flex-wrap:wrap">
+<button type="button" class="btn greenbtn" id="payCash">ক্যাশ</button>
+<button type="button" class="btn gray" id="payBank">ব্যাংক</button>
+<button type="button" class="btn gray" id="payDue">বাকি</button>
+</div>
+<input id="sPayment" type="hidden" value="cash">
+<div class="muted" id="paymentLabel">ক্যাশ পেমেন্ট নির্বাচিত</div>
+</div>
+</div>
+<div class="pos-totals">
+<div>
+<span>সাব-টোটাল</span>
+<span id="sGross">৳ 0.00</span>
+</div>
+<div>
+<span>ডিসকাউন্ট</span>
+<span id="sDiscAmt">৳ 0.00</span>
+</div>
+<div class="pos-net">
+<span>সর্বমোট</span>
+<span id="sNet">৳ 0.00</span>
+</div>
+</div>
+<div class="formactions">
+<button class="btn greenbtn" id="saveSale">ইনভয়েস / অর্ডার সেভ করুন</button>
+</div>
+</div>
+</div>
+</section>
+<section id="pending" class="view">
+<div class="card">
+<div class="section-title">পেন্ডিং অর্ডার <button class="btn gray refresh-btn" id="refresh">রিফ্রেশ</button>
+</div>
+<div id="pendingTable">
+</div>
+</div>
+</section>
+<section id="delivery" class="view">
+<div class="card">
+<div class="section-title">ডেলিভারি সম্পন্ন অর্ডার <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div id="deliveryTable">
+</div>
+</div>
+</section>
+<section id="return" class="view">
+<div class="card">
+<div class="section-title">ক্যানসেল / রিটার্ন অর্ডার <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div id="returnTable">
+</div>
+</div>
+</section>
+<section id="stock" class="view">
+<div class="card">
+<div class="section-title">স্টক <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div id="stockTable">
+</div>
+</div>
+</section>
+<section id="voucherPurchase" class="view">
+<div class="card">
+<div class="section-title">ভাউচার / ক্রয় ইনভয়েস <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div id="voucherPurchaseTable">
+</div>
+</div>
+</section>
+<section id="voucherSale" class="view">
+<div class="card">
+<div class="section-title">ভাউচার / বিক্রয় ইনভয়েস <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div id="voucherSaleTable">
+</div>
+</div>
+</section>
+<section id="invoices" class="view">
+<div class="card">
+<div class="section-title">পুরোনো সকল ইনভয়েস <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div class="notice">প্রতিটি ইনভয়েসের পাশে Edit চাপলে তথ্য পরিবর্তন করে আবার সেভ করতে পারবেন।</div>
+<div id="invoiceTable">
+</div>
+</div>
+</section>
+<section id="products" class="view">
+<div class="card">
+<div class="product-head">
+<div>
+<div class="section-title" style="margin-bottom:4px">পণ্য লিস্ট</div>
+<div class="muted">সব পণ্য ডান পাশে দেখুন এবং নতুন পণ্য যোগ করুন</div>
+</div>
+<button class="btn gray refresh-btn">রিফ্রেশ</button> <button class="btn" id="openProductModal">+ নতুন পণ্য যোগ</button>
+</div>
+<div class="summary">
+<div class="card blue">মোট পণ্য<div class="metric" id="productCount">0</div>
+</div>
+<div class="card green">মোট মজুদ<div class="metric" id="productStockTotal">0</div>
+</div>
+<div class="card orange">মোট দাম<div class="metric" id="productValueTotal">৳ 0.00</div>
+</div>
+</div>
+<div id="productTable">
+</div>
+</div>
+</section>
+<div id="productModal">
+<div class="modal-box">
+<div class="section-title">
+<span id="productModalTitle">নতুন পণ্য যোগ করুন</span>
+<button class="btn gray" id="closeProductModal">✕</button>
+</div>
+<div class="formgrid">
+<div class="field">
+<label>বার কোড</label>
+<input id="newBarcode" placeholder="ঐচ্ছিক">
+</div>
+<div class="field">
+<label>পণ্যের নাম</label>
+<input id="newProduct" placeholder="পণ্যের নাম লিখুন">
+</div>
+<div class="field">
+<label>ইউনিট</label>
+<select id="newUnit">
+</select>
+</div>
+<div class="field">
+<label>কোম্পানি দর</label>
+<input id="newCompanyPrice" type="number" min="0" value="0">
+</div>
+<div class="field">
+<label>লাভের হার (%)</label>
+<input id="newPercent" type="number" min="0" value="0">
+</div>
+<div class="field">
+<label>সেল দর</label>
+<input id="newSalePrice" type="number" min="0" value="0" readonly>
+</div>
+<div class="field">
+<label>শুরুর স্টক</label>
+<input id="newStock" type="number" min="0" value="0">
+</div>
+<div class="field">
+<label>লো স্টক এলার্ট</label>
+<input id="newLowStock" type="number" min="0" value="5">
+</div>
+</div>
+<div class="formactions">
+<button class="btn greenbtn" id="addProduct">পণ্য সেভ করুন</button>
+<button class="btn gray" id="cancelProductModal">বাতিল</button>
+</div>
+</div>
+</div>
+<div id="editInvoiceModal">
+<div class="modal-box">
+<div class="section-title" id="editInvoiceTitle">ইনভয়েস এডিট<button class="btn gray" id="closeEditInvoiceModal">✕</button>
+</div>
+<div class="formgrid">
+<div class="field">
+<label>পার্টির নাম</label>
+<input id="editParty">
+</div>
+<div class="field">
+<label>পরিমাণ (Qty)</label>
+<input id="editQty" type="number" min="1" value="1">
+</div>
+<div class="field">
+<label>দর (প্রতি ইউনিট)</label>
+<input id="editPrice" type="number" min="0" value="0">
+</div>
+<div class="field" id="editDiscountField">
+<label>ডিসকাউন্ট</label>
+<input id="editDiscount" type="number" min="0" value="0">
+</div>
+</div>
+<div class="notice">এই অর্ডারটি আগে সম্পন্ন (Completed) থাকলে স্টক ও ক্যাশ হিসাব স্বয়ংক্রিয়ভাবে ঠিক করে নতুন তথ্য অনুযায়ী পুনরায় হিসাব করা হবে।</div>
+<div class="formactions">
+<button class="btn greenbtn" id="saveEditInvoice">পরিবর্তন সেভ করুন</button>
+<button class="btn gray" id="cancelEditInvoiceModal">বাতিল</button>
+</div>
+</div>
+</div>
+<section id="units" class="view">
+<div class="card">
+<div class="section-title">ইউনিট ব্যবস্থাপনা <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div class="formgrid">
+<div class="field">
+<label>নতুন ইউনিট</label>
+<input id="newUnitName" placeholder="যেমন: কার্টন, পিস, কেজি">
+</div>
+</div>
+<div class="formactions">
+<button class="btn" id="addUnit">ইউনিট যোগ করুন</button>
+</div>
+<div id="unitTable">
+</div>
+</div>
+</section>
+<section id="cash" class="view">
+<div class="card">
+<div class="section-title">ক্যাশ হিসাব <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div class="summary">
+<div class="card green">
+<div class="muted">বর্তমান ক্যাশ</div>
+<div class="metric" id="cashBalance">৳ 0.00</div>
+</div>
+<div class="card blue">
+<div class="muted">মোট জমা</div>
+<div class="metric" id="cashIn">৳ 0.00</div>
+</div>
+<div class="card orange">
+<div class="muted">মোট খরচ</div>
+<div class="metric" id="cashOut">৳ 0.00</div>
+</div>
+</div>
+<div class="formgrid">
+<div class="field">
+<label>লেনদেনের ধরন</label>
+<select id="cashType">
+<option value="in">জমা</option>
+<option value="out">খরচ</option>
+<option value="transferBank">ব্যাংকে স্থানান্তর</option>
+</select>
+</div>
+<div class="field">
+<label>টাকার পরিমাণ</label>
+<input id="cashAmount" type="number" min="0" step="0.01" placeholder="0.00">
+</div>
+<div class="field">
+<label>বিবরণ</label>
+<input id="cashNote" placeholder="যেমন: ডেলিভারি খরচ / নগদ জমা">
+</div>
+</div>
+<div class="formactions">
+<button class="btn" id="addCash">ক্যাশ লেনদেন যোগ করুন</button>
+</div>
+<div id="cashInfo">
+</div>
+</div>
+</section>
+<section id="bank" class="view">
+<div class="card">
+<div class="section-title">ব্যাংক হিসাব <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div class="summary">
+<div class="card green">
+<div class="muted">বর্তমান ব্যাংক ব্যালেন্স</div>
+<div class="metric" id="bankBalance">৳ 0.00</div>
+</div>
+<div class="card blue">
+<div class="muted">মোট জমা</div>
+<div class="metric" id="bankIn">৳ 0.00</div>
+</div>
+<div class="card orange">
+<div class="muted">মোট উত্তোলন/খরচ</div>
+<div class="metric" id="bankOut">৳ 0.00</div>
+</div>
+</div>
+<div class="formgrid">
+<div class="field">
+<label>লেনদেনের ধরন</label>
+<select id="bankType">
+<option value="in">জমা</option>
+<option value="out">উত্তোলন / খরচ</option>
+</select>
+</div>
+<div class="field">
+<label>টাকার পরিমাণ</label>
+<input id="bankAmount" type="number" min="0" step="0.01" placeholder="0.00">
+</div>
+<div class="field">
+<label>ব্যাংকের নাম</label>
+<input id="bankName" placeholder="ব্যাংকের নাম">
+</div>
+<div class="field">
+<label>বিবরণ</label>
+<input id="bankNote" placeholder="লেনদেনের বিবরণ">
+</div>
+</div>
+<div class="formactions">
+<button class="btn" id="addBank">ব্যাংক লেনদেন যোগ করুন</button>
+</div>
+<div id="bankInfo">
+</div>
+</div>
+</section>
+<section id="income" class="view">
+<div class="card">
+<div class="section-title">আয় হিসাব <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div class="notice">এখানে পণ্য বিক্রয় নয়—অন্যান্য সব আয় আলাদা করে লিখুন। যেমন: কমিশন, সার্ভিস চার্জ বা পরিবহন আয়।</div>
+<div class="summary">
+<div class="card green">
+<div class="muted">মোট আয়</div>
+<div class="metric" id="incomeTotal">৳ 0.00</div>
+</div>
+<div class="card blue">
+<div class="muted">ক্যাশ আয়</div>
+<div class="metric" id="incomeCashTotal">৳ 0.00</div>
+</div>
+<div class="card purple">
+<div class="muted">ব্যাংক আয়</div>
+<div class="metric" id="incomeBankTotal">৳ 0.00</div>
+</div>
+</div>
+<div class="formgrid">
+<div class="field">
+<label>আয়ের খাত</label>
+<input id="incomeCategory" placeholder="যেমন: কমিশন / সার্ভিস চার্জ">
+</div>
+<div class="field">
+<label>টাকার পরিমাণ</label>
+<input id="incomeAmount" type="number" min="0" step="0.01" placeholder="0.00">
+</div>
+<div class="field">
+<label>যে হিসাবে জমা হবে</label>
+<select id="incomeAccount">
+<option value="cash">ক্যাশ</option>
+<option value="bank">ব্যাংক</option>
+</select>
+</div>
+<div class="field">
+<label>বিবরণ</label>
+<input id="incomeNote" placeholder="আয়ের বিস্তারিত বিবরণ">
+</div>
+</div>
+<div class="formactions">
+<button class="btn greenbtn" id="addIncome">আয় যোগ করুন</button>
+</div>
+<div id="incomeInfo">
+</div>
+</div>
+</section>
+<section id="expense" class="view">
+<div class="card">
+<div class="section-title">ব্যয় হিসাব <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div class="notice">ক্রয় হিসাব এখানে লিখবেন না। পণ্য ক্রয় আলাদা ক্রয় অর্ডার/ক্রয় হিসাবে থাকবে; এখানে দোকানের অন্যান্য ব্যয় লিখুন।</div>
+<div class="summary">
+<div class="card red">
+<div class="muted">মোট ব্যয়</div>
+<div class="metric" id="expenseTotal">৳ 0.00</div>
+</div>
+<div class="card orange">
+<div class="muted">ক্যাশ ব্যয়</div>
+<div class="metric" id="expenseCashTotal">৳ 0.00</div>
+</div>
+<div class="card purple">
+<div class="muted">ব্যাংক ব্যয়</div>
+<div class="metric" id="expenseBankTotal">৳ 0.00</div>
+</div>
+</div>
+<div class="formgrid">
+<div class="field">
+<label>ব্যয়ের খাত</label>
+<input id="expenseCategory" placeholder="যেমন: ভাড়া / বিদ্যুৎ / পরিবহন">
+</div>
+<div class="field">
+<label>টাকার পরিমাণ</label>
+<input id="expenseAmount" type="number" min="0" step="0.01" placeholder="0.00">
+</div>
+<div class="field">
+<label>যে হিসাব থেকে পরিশোধ হবে</label>
+<select id="expenseAccount">
+<option value="cash">ক্যাশ</option>
+<option value="bank">ব্যাংক</option>
+</select>
+</div>
+<div class="field">
+<label>বিবরণ</label>
+<input id="expenseNote" placeholder="ব্যয়ের বিস্তারিত বিবরণ">
+</div>
+</div>
+<div class="formactions">
+<button class="btn redbtn" id="addExpense">ব্যয় যোগ করুন</button>
+</div>
+<div id="expenseInfo">
+</div>
+</div>
+</section>
+<section id="party" class="view">
+<div class="card">
+<div class="section-title">পার্টি / সাপ্লাইয়ার <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div class="notice">পার্টি বা সাপ্লাইয়ার যোগ করুন এবং কার কাছ থেকে কত কেনা/বিক্রি হয়েছে তার রিপোর্ট দেখুন।</div>
+<div class="formgrid">
+<div class="field">
+<label>ধরন</label>
+<select id="partyType">
+<option value="party">পার্টি</option>
+<option value="supplier">সাপ্লাইয়ার</option>
+</select>
+</div>
+<div class="field">
+<label>নাম</label>
+<input id="partyName" placeholder="পার্টি / সাপ্লাইয়ারের নাম">
+</div>
+<div class="field">
+<label>মোবাইল নং</label>
+<input id="partyMobile" placeholder="মোবাইল নম্বর">
+</div>
+<div class="field">
+<label>ঠিকানা</label>
+<input id="partyAddress" placeholder="ঠিকানা">
+</div>
+</div>
+<div class="formactions">
+<button class="btn" id="saveParty">যোগ করুন</button>
+</div>
+<div id="partyTable">
+</div>
+</div>
+</section>
+<section id="due" class="view">
+<div class="card">
+<div class="section-title">বাকি হিসাব (পাওনা ও দেনা) <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div class="notice">যেসব বিক্রয়/ক্রয় "বাকি" পেমেন্টে সম্পন্ন হয়েছে কিন্তু এখনো টাকা লেনদেন হয়নি, তা এখানে দেখুন। টাকা হাতে পেলে/দিলে "পরিশোধ সম্পন্ন" চাপুন — তখনই তা ক্যাশে যোগ/বাদ হবে।</div>
+<div id="dueTable">
+</div>
+</div>
+</section>
+<section id="balance" class="view">
+<div class="card">
+<div class="section-title">ব্যালেন্স শীট <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div id="balanceSheet">
+</div>
+</div>
+</section>
+<section id="profit" class="view">
+<div class="card">
+<div class="section-title">লাভ-ক্ষতি হিসাব <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div id="profitLoss">
+</div>
+</div>
+</section>
+<section id="reports" class="view">
+<div class="card">
+<div class="section-title">বিস্তারিত রিপোর্ট <button class="btn gray refresh-btn">রিফ্রেশ</button>
+</div>
+<div class="summary">
+<div class="card blue">মোট বিক্রয়<div class="metric" id="rSales">৳ 0.00</div>
+</div>
+<div class="card green">মোট ক্রয়<div class="metric" id="rPurchase">৳ 0.00</div>
+</div>
+<div class="card orange">মোট লাভ/ক্ষতি<div class="metric" id="rProfit">৳ 0.00</div>
+</div>
+</div>
+<div id="reportInfo">
+</div>
+<hr>
+<h3>ব্যালেন্স শীট</h3>
+<div id="balanceSheetR">
+</div>
+<hr>
+<h3>লাভ-ক্ষতি হিসাব</h3>
+<div id="profitLossR">
+</div>
+</div>
+</section>
+<section id="appearance" class="view">
+<div class="card">
+<div class="section-title">🎨 রঙ / থিম কাস্টমাইজ</div>
+<div class="notice">এখান থেকে ড্যাশবোর্ডের ঘর ও মেনু প্যানেলের রঙ পরিবর্তন করতে পারবেন।</div>
+<div class="formgrid">
+<div class="field">
+<label>ড্যাশবোর্ড ঘরের রঙ</label>
+<input id="dashCardColor" type="color">
+<input id="dashCardHex" type="text" placeholder="#ffffff" style="margin-top:6px;width:100%;padding:9px;border:1px solid var(--line);border-radius:9px">
+</div>
+<div class="field">
+<label>মেনু প্যানেলের রঙ</label>
+<input id="menuBgColor" type="color">
+<input id="menuBgHex" type="text" placeholder="#ffffff" style="margin-top:6px;width:100%;padding:9px;border:1px solid var(--line);border-radius:9px">
+</div>
+<div class="field">
+<label>মেনু লেখার রঙ</label>
+<input id="menuTextColor" type="color">
+<input id="menuTextHex" type="text" placeholder="#17335f" style="margin-top:6px;width:100%;padding:9px;border:1px solid var(--line);border-radius:9px">
+</div>
+<div class="field">
+<label>সিলেক্টেড মেনুর রঙ</label>
+<input id="menuActiveColor" type="color">
+<input id="menuActiveHex" type="text" placeholder="#e8f2ff" style="margin-top:6px;width:100%;padding:9px;border:1px solid var(--line);border-radius:9px">
+</div>
+<div class="field">
+<label>সিলেক্টেড মেনুর লেখার রঙ</label>
+<input id="menuActiveTextColor" type="color">
+<input id="menuActiveTextHex" type="text" placeholder="#0759c9" style="margin-top:6px;width:100%;padding:9px;border:1px solid var(--line);border-radius:9px">
+</div>
+</div>
+<div class="formactions">
+<button class="btn" id="saveThemeBtn">💾 রঙ সংরক্ষণ</button>
+<button class="btn gray" id="resetThemeBtn">↩️ ডিফল্ট রঙ</button>
+</div>
+</div>
+</section>
+</main>
+</div>
+</div><script>
 const PROFILES_KEY='bs-dealer-pro-v3-profiles';
 function loadProfiles(){let profiles=null;try{profiles=JSON.parse(localStorage.getItem(PROFILES_KEY)||'null')}catch(e){profiles=null}if(profiles&&Array.isArray(profiles.list)&&profiles.list.length&&profiles.current)return profiles;let legacy=null;try{legacy=localStorage.getItem('bs-dealer-pro-v3')}catch(e){legacy=null}const id='p'+Date.now();profiles={list:[{id,name:'Admin'}],current:id};try{if(legacy)localStorage.setItem('bs-dealer-pro-v3:'+id,legacy);localStorage.setItem(PROFILES_KEY,JSON.stringify(profiles))}catch(e){}return profiles}
 function saveProfiles(p){try{localStorage.setItem(PROFILES_KEY,JSON.stringify(p))}catch(e){}}
@@ -97,4 +844,120 @@ document.getElementById('authLoginBtn').onclick=function(){const mobile=document
 document.getElementById('authResetBtn').onclick=function(){if(!confirm('পিন রিসেট করলে নতুন মোবাইল নম্বর ও পিন সেট করতে হবে (এতে আপনার ক্রয়/বিক্রয়/হিসাবের ডেটা মুছে যাবে না)। আপনি কি নিশ্চিত?'))return;localStorage.removeItem(AUTH_KEY);clearSession();showAuthSetup()};
 document.getElementById('lockBtn').onclick=function(){clearSession();showAuthLogin()};
 [document.getElementById('authSetupPin2'),document.getElementById('authLoginPin')].forEach(el=>el.addEventListener('keydown',function(e){if(e.key==='Enter'){if(el.id==='authSetupPin2')document.getElementById('authSetupBtn').click();else document.getElementById('authLoginBtn').click()}}));
-</script></body></html>
+</script>
+<script>
+(function(){
+  db.incomeTx=Array.isArray(db.incomeTx)?db.incomeTx:[];
+  db.expenseTx=Array.isArray(db.expenseTx)?db.expenseTx:[];
+  const esc=v=>String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const accountName=a=>a==='bank'?'ব্যাংক':'ক্যাশ';
+  const ledgerLabel=kind=>kind==='income'?'আয়':'ব্যয়';
+  let postingSeq=0;
+  function totals(arr){
+    return arr.reduce((r,t)=>{
+      r.total+=Number(t.amount||0);
+      if(t.account==='bank')r.bank+=Number(t.amount||0);else r.cash+=Number(t.amount||0);
+      return r;
+    },{total:0,cash:0,bank:0});
+  }
+  function removePosting(sourceId){
+    db.cashTx=db.cashTx.filter(t=>t.sourceId!==sourceId);
+    db.bankTx=db.bankTx.filter(t=>t.sourceId!==sourceId);
+  }
+  function addPosting(t,kind){
+    removePosting(t.id);
+    const note=(kind==='income'?'আয়: ':'ব্যয়: ')+t.category+(t.note?' — '+t.note:'');
+    const posting={id:Date.now()+(++postingSeq),type:kind==='income'?'in':'out',amount:Number(t.amount),note,date:t.date,source:kind,sourceId:t.id};
+    if(t.account==='bank')db.bankTx.push({...posting,bank:''});else db.cashTx.push(posting);
+  }
+  function ledgerRows(arr,kind){
+    if(!arr.length)return '<div class="empty">কোনো '+ledgerLabel(kind)+' লেখা নেই</div>';
+    return '<div class="tablewrap"><table class="table"><tr><th>তারিখ</th><th>খাত</th><th>পরিমাণ</th><th>হিসাব</th><th>বিবরণ</th><th>অ্যাকশন</th></tr>'+
+      arr.slice().sort((a,b)=>Number(b.id)-Number(a.id)).map(t=>'<tr><td>'+esc(t.date)+'</td><td>'+esc(t.category)+'</td><td>'+money(t.amount)+'</td><td>'+accountName(t.account)+'</td><td>'+esc(t.note||'-')+'</td><td><button class="btn gray" onclick="editAccountTx('+t.id+',\''+kind+'\')">এডিট</button> <button class="btn redbtn" onclick="deleteAccountTx('+t.id+',\''+kind+'\')">মুছুন</button></td></tr>').join('')+
+      '</table></div>';
+  }
+  function renderAccountViews(){
+    const inc=totals(db.incomeTx),exp=totals(db.expenseTx);
+    if($('mIncome'))$('mIncome').textContent=money(inc.total);
+    if($('mExpense'))$('mExpense').textContent=money(exp.total);
+    if($('incomeTotal'))$('incomeTotal').textContent=money(inc.total);
+    if($('incomeCashTotal'))$('incomeCashTotal').textContent=money(inc.cash);
+    if($('incomeBankTotal'))$('incomeBankTotal').textContent=money(inc.bank);
+    if($('expenseTotal'))$('expenseTotal').textContent=money(exp.total);
+    if($('expenseCashTotal'))$('expenseCashTotal').textContent=money(exp.cash);
+    if($('expenseBankTotal'))$('expenseBankTotal').textContent=money(exp.bank);
+    if($('incomeInfo'))$('incomeInfo').innerHTML=ledgerRows(db.incomeTx,'income');
+    if($('expenseInfo'))$('expenseInfo').innerHTML=ledgerRows(db.expenseTx,'expense');
+    const completed=db.orders.filter(o=>o.status==='Completed');
+    const sales=completed.filter(o=>o.type==='sale').reduce((a,o)=>a+Number(o.total||0),0);
+    const purchases=completed.filter(o=>o.type==='purchase').reduce((a,o)=>a+Number(o.total||0),0);
+    const cogs=completed.filter(o=>o.type==='sale').reduce((a,o)=>a+orderItems(o).reduce((s,it)=>{
+      const p=db.products.find(x=>x.id===it.pid);
+      return s+Number(it.qty||0)*Number(p&&p.companyPrice||0);
+    },0),0);
+    const netProfit=sales-cogs+inc.total-exp.total;
+    if($('rProfit'))$('rProfit').textContent=money(netProfit);
+    const profitHTML='<div class="tablewrap"><table class="table"><tr><th>আয়/ব্যয়ের বিষয়</th><th>পরিমাণ</th></tr><tr><td>মোট বিক্রয়</td><td>'+money(sales)+'</td></tr><tr><td>বিক্রিত পণ্যের ক্রয়মূল্য (COGS)</td><td>'+money(cogs)+'</td></tr><tr><td>গ্রস লাভ</td><td>'+money(sales-cogs)+'</td></tr><tr><td>অন্যান্য আয়</td><td>'+money(inc.total)+'</td></tr><tr><td>অন্যান্য ব্যয়</td><td>'+money(exp.total)+'</td></tr><tr><td>আলাদা ক্রয় হিসাব</td><td>'+money(purchases)+'</td></tr><tr><td><b>নীট লাভ/ক্ষতি</b></td><td><b>'+money(netProfit)+'</b></td></tr></table></div>';
+    if($('profitLoss'))$('profitLoss').innerHTML=profitHTML;
+    if($('profitLossR'))$('profitLossR').innerHTML=profitHTML;
+  }
+  function clearIncomeForm(){
+    $('incomeCategory').value='';$('incomeAmount').value='';$('incomeNote').value='';$('incomeAccount').value='cash';
+  }
+  function clearExpenseForm(){
+    $('expenseCategory').value='';$('expenseAmount').value='';$('expenseNote').value='';$('expenseAccount').value='cash';
+  }
+  if($('addIncome'))$('addIncome').onclick=function(){
+    const category=$('incomeCategory').value.trim(),amount=Number($('incomeAmount').value||0);
+    if(!category)return alert('আয়ের খাত লিখুন');
+    if(!(amount>0))return alert('সঠিক আয়ের পরিমাণ দিন');
+    const t={id:Date.now(),category,amount,account:$('incomeAccount').value,note:$('incomeNote').value.trim(),date:new Date().toLocaleString('en-GB')};
+    db.incomeTx.unshift(t);addPosting(t,'income');clearIncomeForm();save();nav('income');
+  };
+  if($('addExpense'))$('addExpense').onclick=function(){
+    const category=$('expenseCategory').value.trim(),amount=Number($('expenseAmount').value||0);
+    if(!category)return alert('ব্যয়ের খাত লিখুন');
+    if(!(amount>0))return alert('সঠিক ব্যয়ের পরিমাণ দিন');
+    const t={id:Date.now(),category,amount,account:$('expenseAccount').value,note:$('expenseNote').value.trim(),date:new Date().toLocaleString('en-GB')};
+    db.expenseTx.unshift(t);addPosting(t,'expense');clearExpenseForm();save();nav('expense');
+  };
+  window.editAccountTx=function(id,kind){
+    const arr=kind==='income'?db.incomeTx:db.expenseTx,t=arr.find(x=>x.id===id);
+    if(!t)return alert('লেনদেন পাওয়া যায়নি');
+    const category=prompt((kind==='income'?'আয়ের':'ব্যয়ের')+' খাত',t.category);if(category===null)return;
+    const amount=prompt('টাকার পরিমাণ',t.amount);if(amount===null)return;
+    const value=Number(amount);if(!(value>0))return alert('সঠিক পরিমাণ দিন');
+    const account=prompt('হিসাব লিখুন: cash অথবা bank',t.account||'cash');if(account===null)return;
+    const normalized=account.toLowerCase()==='bank'?'bank':'cash';
+    const note=prompt('বিবরণ',t.note||'');if(note===null)return;
+    t.category=category.trim()||t.category;t.amount=value;t.account=normalized;t.note=note.trim();addPosting(t,kind);save();
+  };
+  window.deleteAccountTx=function(id,kind){
+    if(!confirm('এই '+ledgerLabel(kind)+' হিসাবটি মুছে ফেলবেন? ক্যাশ/ব্যাংকের সংশ্লিষ্ট লেনদেনও মুছে যাবে।'))return;
+    const arr=kind==='income'?db.incomeTx:db.expenseTx,idx=arr.findIndex(x=>x.id===id);
+    if(idx<0)return;arr.splice(idx,1);removePosting(id);save();
+  };
+  const originalEditTx=window.editTx,originalDeleteTx=window.deleteTx;
+  window.editTx=function(id,kind){
+    const arr=kind==='cash'?db.cashTx:db.bankTx,t=arr.find(x=>x.id===id);
+    if(t&&t.sourceId)return editAccountTx(t.sourceId,t.source);
+    return originalEditTx(id,kind);
+  };
+  window.deleteTx=function(id,kind){
+    const arr=kind==='cash'?db.cashTx:db.bankTx,t=arr.find(x=>x.id===id);
+    if(t&&t.sourceId)return deleteAccountTx(t.sourceId,t.source);
+    return originalDeleteTx(id,kind);
+  };
+  const originalFillProducts=fillProducts;
+  fillProducts=function(){
+    if($('sProduct'))$('sProduct').innerHTML=db.products.map(p=>`<option value="${p.id}">${p.name}</option>`).join('')||'<option value="">পণ্য যোগ করুন</option>';
+    if($('newUnit'))$('newUnit').innerHTML=db.units.map(u=>`<option>${u}</option>`).join('');
+    if($('pProductList'))renderPProductList();
+  };
+  const baseRender=render;
+  render=function(){try{baseRender()}catch(e){console.error(e)}renderAccountViews()};
+  renderAccountViews();
+})();
+</script>
+</body>
+</html>
