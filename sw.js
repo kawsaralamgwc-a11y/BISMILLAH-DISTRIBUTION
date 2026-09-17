@@ -1,5 +1,41 @@
-const CACHE='bs-dealer-pro-v3-offline';
-const FILES=['./','./index.html','./manifest.json','./sw.js','./icon-192.png','./icon-512.png','./favicon.png'];
-self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES)).then(()=>self.skipWaiting()));});
-self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));});
-self.addEventListener('fetch',event=>{event.respondWith(caches.match(event.request).then(cached=>cached||fetch(event.request).then(response=>{if(event.request.method==='GET'&&response.ok){const copy=response.clone();caches.open(CACHE).then(cache=>cache.put(event.request,copy));}return response;}).catch(()=>caches.match('./index.html'))));});
+const CACHE = "bs-dealer-pro-v4";
+const ASSETS = [
+  "./index.html",
+  "./manifest.json",
+  "./icon-64.png",
+  "./icon-192.png",
+  "./icon-512.png",
+  "./favicon.png",
+];
+
+self.addEventListener("install", (e) => {
+  self.skipWaiting();
+  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS).catch(() => {})));
+});
+
+self.addEventListener("activate", (e) => {
+  e.waitUntil(
+    caches.keys().then((keys) =>
+      Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))
+    )
+  );
+  self.clients.claim();
+});
+
+self.addEventListener("fetch", (e) => {
+  const req = e.request;
+  if (req.method !== "GET") return;
+  e.respondWith(
+    caches.match(req).then(
+      (cached) =>
+        cached ||
+        fetch(req)
+          .then((res) => {
+            const copy = res.clone();
+            caches.open(CACHE).then((c) => c.put(req, copy)).catch(() => {});
+            return res;
+          })
+          .catch(() => cached)
+    )
+  );
+});
